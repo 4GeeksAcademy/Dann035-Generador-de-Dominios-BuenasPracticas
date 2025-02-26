@@ -4,5 +4,8 @@ let nouns = ['jogger', 'racoon'];
 let domains = ['.com', '.net', '.us', '.io'];
 
 let domainGenerator = () => {
-    pronouns.flatMap(pronoun => adjetives.flatMap(adjetives => nouns.flatMap(noun => domains.map(domain => console.log(pronoun + adjetives + noun + domain)))));
+    pronouns.flatMap(pronoun => adjetives.flatMap(adjetive => 
+        nouns.flatMap(noun => domains.map(domain => console.log(pronoun + adjetive + noun + domain)))));
 }
+
+domainGenerator()
